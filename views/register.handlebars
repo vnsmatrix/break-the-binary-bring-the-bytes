@@ -1,0 +1,33 @@
+<body>
+    <div class="container">
+        <form method="POST">
+            <input type="hidden" name="_csrf" value="{{csrfToken}}">
+            {{#error}}
+            <div id="error"><b>{{message}}</b></div>
+            {{/error}}
+            <!-- <h3><a href="http://www.laboriacuboniks.net/">XF MANIFESTO</a></h3> -->
+            <h1>BREAK THE BINARY,<br>BRING THE BYTES!</h1>
+            <h2>Join our mission to close the gender gap in tech <3</h2>
+            <div id="info">
+                ■ Among 3 million pull requests examined on GitHub, female-written code saw a 78.6% approval rate. With male-written code, it was 74.6%. If female coders specified their gender on their profiles, though, their acceptance rate fell to 62.5%.
+                ■ As for November 2017, the average female programmer made nearly 30% less than her male counterpart.
+                ■ Only 17% of computer science degree students are female, according to the UK Higher Education Statistics Agency. In the US, it is 18%.
+                ■ Just 27% of people employed in Britain’s digital industries are women, according to the UK Commission for Employment and Skills.
+                ■ At Amazon, only 18 of its 120 senior managers are female, and none of those women reports directly to the chief executive, Jeff Bezos.
+                ■ Only 30% of Google’s global staff are female. When narrowed by job type and seniority, the gender split is more extreme: only 21% of leadership positions and 17% of technology-specific jobs are held by women, according to Google’s 2014 diversity report.
+                ■ The number of female chief technology officers worldwide has remained static for the past 10 years - at 14%, according to a report by Gartner. Women occupied 11.2% of technology leadership roles in Europe, the Middle East and Africa, compared with 18.1% in North America, 13.4% in Latin America and 11.5% in Asia.
+            </div>
+            First name: <input id="first" name="first">
+            <br>
+            Last name: <input id="last" name="last">
+            <br>
+            Email: <input id="email" name="email" type="email">
+            <br>
+            Password: <input id="pass" name="pass" type="password">
+            <br><br>
+            <button type="submit">SIGN UP</button>
+            <br>
+            <p>If you are already a member, please <a href='/login'>log in</a>.</p>
+        </form>
+    </div>
+<body>

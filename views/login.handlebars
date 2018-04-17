@@ -1,0 +1,18 @@
+<body>
+    <div class="container">
+        <form method="POST">
+            <input type="hidden" name="_csrf" value="{{csrfToken}}">
+            {{#error}}
+            <div id="error"><b>{{message}}</b></div>
+            {{/error}}
+            <h1>{{title}}</h1>
+            Email: <input id="email" name="email">
+            <br>
+            Password: <input id="pass" name="pass" type="password">
+            <br><br>
+            <button type="submit">LOG IN</button>
+            <br>
+            <p>To create a new account, please <a href='/register'>sign up</a>.</p>
+        </form>
+    </div>
+<body>

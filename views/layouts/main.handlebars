@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <div class='heart animated css'></div>
+
+    <div id="menu">
+        {{#unless logged}}
+        <a href="/login" id="login">log in!</a>
+        {{/unless}}
+        {{#if logged}}
+        <a href="/home" id="home">H-O-M-E</a>
+        <a href="/edit" id="edit">*profile*</a>
+        <!-- <a href="/signers" id="signers">*signers*</a> -->
+        <a href="/logout" id="logout">log out?</a>
+        {{/if}}
+    </div>
+
+    {{{body}}}
+    <div id="ticker">
+        <a href="http://www.laboriacuboniks.net/" target="_blank" id="xf">The real emancipatory potential of technology remains unrealized. Fed by the market, its rapid growth is offset by bloat, and elegant innovation is surrendered to the buyer, whose stagnant world it decorates. Beyond the noisy clutter of commodified cruft, the ultimate task lies in engineering technologies to combat unequal access to reproductive and pharmacological tools, environmental cataclysm, economic instability, as well as dangerous forms of unpaid/underpaid labour. Gender inequality still characterizes the fields in which our technologies are conceived, built, and legislated for, while female workers in electronics (to name just one industry) perform some of the worst paid, monotonous and debilitating labour. Such injustice demands structural, machinic and ideological correction.   </a>
+        <a href="http://www.laboriacuboniks.net/" target="_blank" id="xf">Why is there so little explicit, organized effort to repurpose technologies for progressive gender political ends? XF seeks to strategically deploy existing technologies to re-engineer the world. Serious risks are built into these tools; they are prone to imbalance, abuse, and exploitation of the weak. Rather than pretending to risk nothing, XF advocates the necessary assembly of techno-political interfaces responsive to these risks. Technology isn't inherently progressive. Its uses are fused with culture in a positive feedback loop that makes linear sequencing, prediction, and absolute caution impossible. Technoscientific innovation must be linked to a collective theoretical and political thinking in which women, queers, and the gender non-conforming play an unparalleled role.</a>
+        <a href="http://www.laboriacuboniks.net/" target="_blank" id="xf">To claim that reason or rationality is 'by nature' a patriarchal enterprise is to concede defeat. It is true that the canonical 'history of thought' is dominated by men, and it is male hands we see throttling existing institutions of science and technology. But this is precisely why feminism must be a rationalism–because of this miserable imbalance, and not despite it. There is no 'feminine' rationality, nor is there a 'masculine' one. Science is not an expression but a suspension of gender. If today it is dominated by masculine egos, then it is at odds with itself–and this contradiction can be leveraged. Reason, like information, wants to be free, and patriarchy cannot give it freedom. Rationalism must itself be a feminism.</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/info.js"></script>
+    <script src="/ticker.js"></script>
+</html>

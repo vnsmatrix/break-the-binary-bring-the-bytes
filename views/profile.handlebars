@@ -1,0 +1,25 @@
+<body>
+    <div class="container">
+        <form method="POST">
+            <input type="hidden" name="_csrf" value="{{csrfToken}}">
+            {{#error}}
+            <div id="error"><b>{{message}}</b></div>
+            {{/error}}
+            <p>Please enter this optional info:</p>
+            Age: <input id="age" name="age">
+            <br>
+            City: <input id="city" name="city">
+            <br>
+            Homepage: <input id="url" name="url" type="url">
+            <br><br>
+            <!-- Receive bulletin?
+            <select name="bulletin">
+                <option value="0" {{#unless bulletin}} selected {{/unless}}>no</option>
+                <option value="1" {{#if bulletin}} selected {{/if}}>yes</option>
+            </select>
+            <br><br> -->
+            <button type="submit">CONTINUE</button>
+        </form>
+
+    </div>
+<body>

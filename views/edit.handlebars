@@ -1,0 +1,36 @@
+<body>
+    <div class="container">
+        <form method="POST">
+            <input type="hidden" name="_csrf" value="{{csrfToken}}">
+            {{#error}}
+            <div id="error"><b>{{message}}</b></div>
+            {{/error}}
+            <h1>{{title}}</h1>
+            {{#info}}
+            First name: <input id="first" name="first" value="{{first}}">
+            <br>
+            Last name: <input id="last" name="last" value="{{last}}">
+            <br>
+            Email: <input id="email" name="email" value="{{email}}" type="email">
+            <br>
+            Password: <input id="pass" name="pass" type="password" value="{{pass}}">
+            <br>
+            Age: <input id="age" name="age" value="{{age}}">
+            <br>
+            City: <input id="city" name="city" value="{{city}}">
+            <br>
+            Homepage: <input id="url" name="url" value="{{url}}" type="url">
+            <br><br>
+            Receive bulletin:
+            <select name="bulletin">
+                <option value="0" {{#unless bulletin}} selected {{/unless}}>no</option>
+                <option value="1" {{#if bulletin}} selected {{/if}}>yes</option>
+            </select>
+            {{/info}}
+            <br><br>
+            <button type="submit">UPDATE</button>
+            <a href="/thankyou">Edit signature</a>
+
+        </form>
+    </div>
+<body>

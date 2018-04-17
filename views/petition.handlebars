@@ -1,0 +1,17 @@
+<body>
+    <div class="container">
+        <form method="POST">
+            <input type="hidden" name="_csrf" value="{{csrfToken}}">
+            {{#error}}
+            <div id="error"><b>{{message}}</b></div>
+            {{/error}}
+            <p>Please sign our petition.</p>
+            <input name="sig" id="sig" type="hidden">
+            <canvas id="canvas" width="433" height="233"></canvas>
+            <br><br>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="canvas.js"></script>
+<body>
